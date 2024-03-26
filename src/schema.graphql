@@ -1,0 +1,17 @@
+
+# Our queries, lets us get information from our custom object types
+type Query{
+    # For this query, expect an array of objects of type Playlist#
+    #This means each Playlist type will have
+    featuredPlaylists: [Playlist!]!
+}
+
+# Our collection of tracks, these are the playlists that hold songs#
+type Playlist{
+     # the unique identifier #
+     id: ID!
+     # our main title for the playlist, the name #
+     name: String!
+     # Describes the playlist #
+     description: String
+}

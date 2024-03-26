@@ -17,10 +17,16 @@
     "compile": "tsc",
     "dev": "ts-node-dev --respawn ./src/index.ts",
     "start": "npm run compile && nodemon ./dist/index.js",
-    "test": "jest"
+    "test": "jest",
+    "generate": "graphql-codegen"
   },
   "dependencies": {
-    "@parcel/watcher": "^2.4.0"
+    "@apollo/datasource-rest": "^6.2.2",
+    "@apollo/server": "^4.10.2",
+    "@parcel/watcher": "^2.4.0",
+    "graphql": "^16.8.1",
+    "graphql-tag": "^2.12.6",
+    "minimatch": "^9.0.3"
   },
   "devDependencies": {
     "@types/jest": "^29.0.3",
